@@ -30,13 +30,10 @@ const corsOptions = {
   origin: ['http://localhost:5173', 'https://solarsquareschool.netlify.com'],
   credentials: true,
 };
-
 app.use(cors(corsOptions));
-
 
 // app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(cookieParser());
-
 
 // routes
 app.get("/", (req, res) => {
