@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: ['http://localhost:5173', 'https://solarsquareschool.netlify.com'],
+  origin: ['http://localhost:5173', 'https://solarsquareschool.netlify.app'],
   credentials: true,
 };
 app.use(cors(corsOptions));
